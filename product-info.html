@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>eMercado - Todo lo que busques está aquí</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i"
+      rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/products.css" rel="stylesheet" />
+    <link href="css/categories.css" rel="stylesheet" />
+    <link href="css/loginPopupMenu.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/reviewYcomentarios.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous">
+    <link href="css/cart.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="contenido">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-1">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav w-100 justify-content-between" id="navlist">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="categories.html">Categorías</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sell.html">Vender</a>
+              </li>
+              <li class="nav-item"></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <main>
+        <div class="x" id="productInfo">
+          <h2 class="nombre-product texto-modo-oscuro" id="nombreProduct"></h2>
+          <button class = "btn btn-success" id="agregarAlCarritoButton">Agregar al carrito</button>
+          <hr />
+
+          
+
+          <!-- carrusel-automatico -->
+          <!-- <div class="col-xxl-6 col-xl-6 col-lg-8 col-md-12 col-sm-12"
+            id="fotosDeProducto">
+            <div class="card border-0 carrusel-oscuro">
+              <ul class="carrusel-producto" id="carruselProducto"
+                style="width: 45vw;"></ul>
+            </div>
+          </div> -->
+          
+         
+      </main>
+
+
+       <!-- Carrusel y info del producto -->
+       <!-- info producto -->
+      <div class="container carru-cont">
+       <div class="col-xxl-5 col-xl-5 col-lg-6 col-md-12 col-sm-12"
+            id="datosDeProducto">
+            <div class="card">
+              <div class="card-body">
+
+                <h3 class="subtitlo-producto card-title texto-modo-oscuro">Precio</h3>
+                <p class="texto-subtitulo card-text texto-modo-oscuro"
+                  id="precioProducto"></p>
+                <hr>
+                <h3 class="subtitlo-producto card-title texto-modo-oscuro">Descripción</h3>
+                <p class="texto-subtitulo card-text texto-modo-oscuro"
+                  id="descripcionProducto"></p>
+                <hr>
+                <h3 class="subtitlo-producto card-title texto-modo-oscuro">Categoria</h3>
+                <p class="texto-subtitulo card-text texto-modo-oscuro"
+                  id="categoriaProducto"></p>
+                <hr>
+                <h3 class="subtitlo-producto card-title texto-modo-oscuro">Cantidad
+                  de vendidos</h3>
+                <p class="texto-subtitulo card-text texto-modo-oscuro"
+                  id="cantidadProducto"></p>
+              </div>
+            </div>
+          </div>
+          <!-- carrusel -->
+       <div class="containerCarrusel">
+        <div id="carouselExampleDark" class="carousel carousel-white slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+          
+          <div class="carousel-inner">
+            <div class="carousel-item active contImg" data-bs-interval="10000">
+              <img src="./img/car4.jpg" class="d-block w-100 carouselimg" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
+            <div class="carousel-item contImg" data-bs-interval="2000">
+              <img src="./img/car4.jpg" class="d-block w-100 carouselimg" alt="...">
+            </div>
+            <div class="carousel-item contImg">
+              <img src="./img/car4.jpg" class="d-block w-100 carouselimg" alt="...">
+            </div>
+            <div class="carousel-item contImg">
+              <img src="./img/car4.jpg" class="d-block w-100 carouselimg" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+          </div>
+        </div>
+      </div>
+  
+      
+
+        
+
+      <!-- login-popup -->
+    </div>
+    <div id="loginPopup" class="popup">
+      <div class="popup-content">
+        <p class="texto-modo-oscuro">Debes estar logueado para acceder a este
+          contenido.</p>
+        <button class="texto-modo-oscuro" id="loginButton">Iniciar Sesión</button>
+      </div>
+    </div>
+
+    <div class="container-comentarios">
+    <div class="comment-box">
+      <div id="comentarios">
+        <h2 class="comentarios-h2 texto-modo-oscuro">Comentarios</h2>
+        <!-- Los comentarios se mostrarán aquí -->
+      </div>
+
+      <div id="nuevoComentario">
+        <!-- <h2 class="texto-modo-oscuro">Comentar</h2> -->
+        <!-- <textarea id="commentInput" class="col-xxl-5 col-xl-5 col-lg-4 col-md-12 col-sm-12"
+          placeholder="Dejanos un comentario!" rows="4" cols="30"></textarea> -->
+          <textarea class="form-control" id="commentInput" placeholder="Dejanos un comentario!" id="floatingTextarea"></textarea>
+
+        <div>
+          <label for="countrySelect" class="estrellas-label">Estrellas: <span
+              id="starRating">0</span></label>
+          <div id="star-rating">
+            <button class="star">&#9734</button>
+            <button class="star">&#9734</button>
+            <button class="star">&#9734</button>
+            <button class="star">&#9734</button>
+            <button class="star">&#9734</button>
+          </div>
+        </div>
+
+        <button onclick="agregarComentario()" class="boton-enviar-comentarios"
+          id="botonDeComentario">Publicar</button>
+      </div>
+    </div>
+  </div>
+
+    <!--carousel de productos relacionados-->
+    <div class="container productos-relacionados">
+      <h3 class="texto-modo-oscuro">Algunos Productos similares</h3>
+      <div class="row" id="productosSimilares">
+
+      </div>
+
+      <!--aca van los productos. Ver product-info.js-->
+    </div>
+
+    <footer class="text-muted">
+      <div class="container">
+        <p class="float-end texto-modo-oscuro">
+          <a href="#">Volver arriba</a>
+        </p>
+        <p>Este sitio forma parte de <a href="https://jovenesaprogramar.edu.uy/"
+            target="_blank">Jovenes a
+            Programar</a></p>
+      </div>
+    </footer>
+    <script src="./js/reviewYcomentarios.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/loginPopUp.js"></script>
+    <script src="js/product-info.js"></script>
+    <script src="js/loginPopupMenu.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="https://kit.fontawesome.com/fdc46ffa07.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Merriweather', serif;
+}
+body{
+    background-image: url(../img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+.page-wrapper{
+    height: 100%;
+    display: flex;
+    margin-left: 10%;
+    margin-bottom: 7%;
+    align-items: flex-end
+}
+.formulario_login{
+    background-color: rgba(255, 255, 255, 0.434);
+    width: 420px;
+    border-radius: 15px;
+    border-style: inset;
+    border-color:  rgba(207, 207, 207, 0.387);
+    padding: 20px;
+    height: 370px;
+}
+.formulario{
+    display: flex;
+    max-width: 400px;
+    border-radius: 5% ;
+    padding: 30px;
+    flex-direction: column;
+row-gap: 20px;
+}
+.form-container{
+    padding-inline: 10px;
+    width: 100%;
+}
+.form-input{
+    font-size: 14px;
+    font-family:Arial, Helvetica, sans-serif;
+    border-color: rgba(207, 207, 207, 0.387);
+    border-radius: 5px;
+}
+.content-wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.formulario_login h1{
+    font-size: 40px;
+text-align: center;
+}
+.formulario_login button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(147, 203, 245);
+font-weight: bold;
+    border-radius: 5px;
+    border-color: rgb(148, 219, 238);
+    outline: none;
+    margin-left: 20px;
+}
+
+.form-check-label{
+    font-size: 11px;
+}
+
+.contraseña-container {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+
+.contraseña-input {
+    position: relative;
+}
+
+#passwordUser {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#mostrarContraseña {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-style:outset;
+    cursor: pointer;
+}

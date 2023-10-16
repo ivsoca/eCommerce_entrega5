@@ -1,0 +1,44 @@
+{
+  "iconos": [
+  {
+    "name": "Hombre 1",
+    "path": "./iconos_perfil/hombre_(1).png"
+  },
+  {
+    "name": "Hombre 2",
+    "path": "./iconos_perfil/hombre_(2).png"
+  },
+  {
+    "name": "Hombre 3",
+    "path": "./iconos_perfil/hombre_(3).png"
+  },
+  {
+    "name": "Hombre",
+    "path": "./iconos_perfil/hombre.png"
+  },
+  {
+    "name": "Usuario",
+    "path": "./iconos_perfil/usuario.png"
+  },
+  {
+    "name": "Mujer 1",
+    "path": "./iconos_perfil/mujer_(1).png"
+  },
+  {
+    "name": "Mujer 2",
+    "path": "./iconos_perfil/mujer_(2).png"
+  },
+  {
+    "name": "Mujer 3",
+    "path": "./iconos_perfil/mujer_(3).png"
+  },
+  {
+    "name": "Mujer",
+    "path": "./iconos_perfil/mujer.png"
+  },
+  {
+    "name": "Jugador",
+    "path": "./iconos_perfil/jugador.png"
+  }
+]
+}

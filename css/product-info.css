@@ -1,0 +1,21 @@
+#comentarios {
+    display: grid;
+    margin: auto;
+    place-items: center;
+}
+
+
+.wrapper-comentario {
+    border: solid black 1px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 2px;
+    width: 600px;
+}
+
+
+/* .comment-box {
+    display: grid;
+    margin: auto;
+    place-items: center;
+}

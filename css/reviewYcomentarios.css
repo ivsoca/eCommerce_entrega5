@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.star{
+    font-size: 3rem;
+    color: #ff9800;
+    background-color:  unset;
+    border: none;
+}
+
+.star-comment{
+    font-size: 20px;
+    color: #ff9800;
+    background-color:  unset;
+    border: none;
+}
+
+/* No borro esta linea de codigo porque toy haciendo pruebas y si lo borras voy a robarte al michi :) */
+/* .comentario-con-estrellas{
+    border: 1px solid rgb(194, 193, 193);
+    border-radius: 3px;
+    width: 70rem;
+    height: 75px;
+    overflow-y: auto;
+} */
+
+
+.tu-clase-de-estilo{
+    background-color: #ff9800;
+}
+
+#datosDeProducto {
+    text-align: left;
+    background-color: #ffc8ff71;
+    padding: 10px;
+    border-radius: 3%;
+    margin-bottom: 2%;
+    float: left;
+    font-size: 16px;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+/* Caja donde se encuentran los comentarios */
+#comentarios {
+    margin: 2%;
+    border-radius: 4%;
+    padding: 1%;
+    max-height: 800px; 
+    padding: 10px; 
+    height: 400px;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Toda la caja con respecto a escribir el comentario */
+#nuevoComentario {
+    margin-left: 3%;
+    margin-bottom: 40px;
+    /* position: relative;
+    top: 68px; */
+}
+
+/* Caja donde uno escribe el comentario */
+#commentInput{
+    /* border-radius: 6px; */
+    /* width: 48rem;*/
+    height: 10rem;  
+    /* background-color: #ebebeb; */
+    /* border: none;
+    padding: 5px; */
+   
+}
+
+.comentarios-h2{
+    position: relative;
+    left: 26px;
+}
+
+.comentar-h2{
+    /* padding: 10px; */
+    position: relative;
+    bottom: 12px;
+}
+
+
+#nombreProduct {
+    margin-left: 1%;
+}
+
+.texto-subtitulo {
+    text-align: left;
+}
+
+.user-comentario {
+    font-weight: bold;
+}
+
+.boton-enviar-comentarios{
+    background-color: antiquewhite;
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+    width: 100px;
+    color: white;
+    background-color: #fa7268;
+}
+
+.boton-enviar-comentarios:hover{
+    background-color: #AFC9FF;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.date-time{
+    color: #8e8e8e; 
+    display: flex;  
+}
+
+.wrapper-comentario{ 
+    /* border: 1px solid rgb(214, 214, 214); */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin: 30px;
+    padding: 20px;
+}
+
+.fecha-mis-comentario{
+    color: #8e8e8e;
+    display: flex;
+}
+
+.estrellas-label{
+    color: #8e8e8e;
+}
+
+.comment-box {
+    margin-right: 50px;
+    /* display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    justify-content:space-evenly; */
+}
+
+.related-product :hover{
+    cursor: pointer;
+
+}
+
+
+@media (min-width: 1440px) {
+    #datosDeProducto{
+        height: 420px;
+    }
+   }

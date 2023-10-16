@@ -1,0 +1,198 @@
+/* Navbar li element */
+#login-nav-li {
+  height: 40px;
+  overflow: hidden;
+}
+
+#cart-nav-li {
+  margin-left: -180px;
+}
+
+/* La propiedad anterior de margen no se aplica en pantallas pequeñas, ya que si lo hace
+el elemento se sale de vista en la pantalla */
+@media screen and (max-width: 1200px) {
+  #cart-nav-li {
+    margin-left: 0;
+  }
+}
+
+#login-nav-li img{
+  display: inline-block;
+  width: 31px;
+}
+
+#login-nav-li p{
+  display: inline-block;
+  margin: 0;
+}
+
+/* Login popup menu */
+#login-menu-container {
+  display: none;
+  position: fixed;
+  top: 48px;
+  right: 8%;
+  width: 300px;
+  height: 200px;
+  border-radius: 6px;
+  background-color: white;
+  z-index: 10;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.2);
+}
+
+#login-foto-perfil-usuario {
+  position: absolute;
+  margin-top: 10px;
+  width: 90px;
+  margin-left: 12px;
+}
+
+#login-cambiar-icono-btn {
+  position: absolute;
+  top: 70px;
+  left: 76px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1;
+  border-top: none;
+  border-left: 2px solid #c7c7c7;
+  border-right: 2px solid #c7c7c7;
+  border-bottom: 2px solid #c7c7c7;
+}
+
+#login-cambiar-icono-btn i {
+  margin-left: -1px;
+}
+
+#login-nombre-usuario {
+  position: absolute;
+  top: 10px;
+  left: 120px;
+  font-size: 22px;
+}
+
+#login-email-usuario {
+  position: absolute;
+  top: 35px;
+  left: 121px;
+  font-size: 16px;
+  font-weight: 200;
+  color: gray;
+}
+
+#login-edit-perfil-btn {
+  position: absolute;
+  top: 70px;
+  left: 120px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+#login-logout-btn {
+  position: absolute;
+  top: 150px;
+  left: 120px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+/* BANDEJA DE ICONOS */
+#menu-cambiar-icono-wrap {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px);
+}
+
+#menu-cambiar-icono-container {
+  /* ! SACAR MARGIN */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 320px;
+  height: 167px;
+  margin: 5px;
+  border-radius: 6px;
+  background-color: white;
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.5));
+  transform: translate(-50%, -50%);
+}
+
+#menu-cambiar-icono-titulo {
+  margin: 0;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.opcion-icono {
+  all: unset;
+  outline: revert;
+  cursor: pointer;
+  transition: transform 0.2s linear;
+  margin-bottom: 8px;
+}
+
+.opcion-icono:hover {
+  transform: scale(1.05);
+}
+
+.opcion-icono img{
+  margin: 0 5px;
+  width: 50px;
+}
+
+/* Boton modo oscuro */
+.modoOscuroBtn {
+  position: absolute;
+    top: 2px;
+    left: 260px;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/modo-oscuro.png);
+    background-size: cover;
+    background-color: transparent;
+    border-top: none;
+    border-left: 2px solid #c7c7c7;
+    border-right: 2px solid #c7c7c7;
+    border-bottom: 2px solid #c7c7c7;
+}
+
+/* Quitar la decoración del <a> botones perfil */
+#btn-edit-perfil, #btn-mi-carrito{
+  text-decoration: none;
+  color: black;
+}
+
+/* Botón mi carrito dentro de cajita perfil*/
+#mi-carrito-btn {
+  position: absolute;
+  top: 110px;
+  left: 120px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+/* Hover botones dentro de cajita perfil*/
+#login-edit-perfil-btn:hover, #mi-carrito-btn:hover, #login-logout-btn:hover {
+  border-bottom: 2px solid #c7c7c7;
+  padding-bottom: 5px;
+  transition: all 0.2s ease;
+}
+
+.modoOscuroBtn:hover, #login-cambiar-icono-btn:hover {
+  border: 2px solid #c7c7c7;
+  padding-bottom: 5px;
+  line-height: normal;
+  transition: all 0.2s ease;
+}

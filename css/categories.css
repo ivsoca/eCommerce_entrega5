@@ -1,0 +1,20 @@
+    .btn-light-label {
+    display: inline-block;
+    padding: 4px 8px;
+    color: black;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .btn-light-label:hover {
+    color: black;
+    background-color: darkgray;
+    cursor: pointer;
+  }
+  
+  .btn-light:checked + .btn-light-label {
+    color: black;
+    background-color: gray;
+    cursor: pointer;
+  }
+  
